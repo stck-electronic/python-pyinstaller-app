@@ -13,6 +13,13 @@ class TestCalc(unittest.TestCase):
         result = calc.add2(1, 2)
         self.assertEqual(result, 3)
 
+    def test_add_2floats(self):
+        """
+        Test that the addition of two floats returns the correct result
+        """
+        result = calc.add2('10.5', '12.0')
+        self.assertEqual(result, 22.5)
+
     def test_add_floats(self):
         """
         Test that the addition of two floats returns the correct result
